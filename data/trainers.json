@@ -1,16 +1,43 @@
 [
     {
         "name": "Ash",
-        "pokemon": ["Pikachu", "Charizard"]
+        "pokemon": [
+            {
+             "name":"Pikachu",
+             "type": "electric"
+            }, 
+            {
+                "name":"Charizard",
+                "type": "fire"
+               }
+        ]
     },
 
     {
         "name": "AZ",
-        "pokemon": ["Snorlax", "Mr. Mime"]
+        "pokemon": [
+            {
+             "name":"Snorlax",
+             "type": "normal"
+            }, 
+            {
+                "name":"Mr. Mime",
+                "type": "psychic"
+               }
+        ]
     },
 
     {
         "name": "Misty",
-        "pokemon": ["Pikachu", "Flareon"]
+        "pokemon": [
+            {
+             "name":"Pikachu",
+             "type": "electric"
+            }, 
+            {
+                "name":"Flareon",
+                "type": "fire"
+               }
+        ]
     }
 ]

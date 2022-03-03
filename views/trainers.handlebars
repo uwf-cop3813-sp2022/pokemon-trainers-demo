@@ -1,0 +1,9 @@
+{{#if hasTrainers}}
+    <ul>
+        {{#each trainers}}
+            <li><a href="/trainers/invite/{{name}}">Invite {{name}}</a></li>
+        {{/each}}
+    </ul>
+{{else}}
+    Sorry, we have no trainers
+{{/if}}

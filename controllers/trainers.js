@@ -7,13 +7,18 @@ const trainerController = {
 
     listTrainers: (req, res) => {
         // Get trainers for a specific type
+        const trainerList = trainerService.getTrainersByType(req.params.type);
 
         // Render a list of trainers
+        res.render('trainers', {
+            trainers: trainerList,
+            hasTrainers: trainerList.length > 0
+        });
     },
 
     trainerForm: (req, res) => {
         // Get the trainer by ID
-        const trainer = trainerService.getTrainerById(req.params.trainerId);
+        const trainer = trainerService.getTrainerByName(req.params.trainerName);
 
         // Show a form for a specific trainer
         res.render('trainerForm', {

@@ -24,10 +24,10 @@ app.get('/', function(req, res) {
 app.get('/trainers/:type', trainerController.listTrainers);
 
 // Show a sign-up form for a specific trainer
-app.get('/trainers/invite/:trainerId', trainerController.trainerForm);
+app.get('/trainers/invite/:trainerName', trainerController.trainerForm);
 
 // Handle the form submission
-app.post('/trainers/invite/:trainerId', trainerController.processTrainerForm);
+app.post('/trainers/invite/:trainerName', trainerController.processTrainerForm);
 
 app.get('/thanks', (req, res) => {
 	res.render('thanks');
