@@ -1,1 +1,11 @@
 <h1>Invite {{trainer.name}}</h1>
+
+<form method="POST" action="/trainers/invite/{{trainer.name}}">
+    <label>Location</label>
+    <input name="location"/>
+
+    <label>Comments</label>
+    <textarea name="comments"></textarea>
+
+    <button type="submit">Register</button>
+</form>

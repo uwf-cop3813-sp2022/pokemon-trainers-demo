@@ -2,6 +2,9 @@ const express = require('express');
 
 let app = express();
 
+// Handle request body submissions
+app.use( express.urlencoded() );
+
 // Import controllers
 const trainerController = require('./controllers/trainers');
 

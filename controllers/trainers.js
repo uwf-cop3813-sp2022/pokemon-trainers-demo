@@ -30,9 +30,11 @@ const trainerController = {
         // Process a form submission for a trainer
         // Add them to the list of gym invitees
         trainerGymList.push({
-            message: req.body.inviteMessage,
+            location: req.body.location,
             comments: req.body.comments
-        })
+        });
+
+        console.log(trainerGymList);
 
         // Redirect the user
         res.redirect('/thanks');
